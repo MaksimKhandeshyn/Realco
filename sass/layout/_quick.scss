@@ -1,0 +1,51 @@
+.quick {
+  padding-bottom: 128px;
+  .quick__container {
+    margin-left: 80px;
+    .quick__subtitle-wrapper {
+      width: 127px;
+      height: 29px;
+      .quick__subtitle {
+        line-height: 1.5;
+        color: $title-color;
+      }
+    }
+    .quick__title {
+      font-size: 48px;
+      line-height: 1.2;
+      color: $title-color;
+      margin-bottom: 30px;
+    }
+    .quick__info {
+      width: 600px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: $info-color;
+      margin-bottom: 28px;
+    }
+    .quick__list {
+      display: flex;
+      margin-top: 101px;
+      margin-bottom: 30px;
+      .quick__list-item {
+        margin-right: 67px;
+      }
+      .quick__list-item:first-child {
+        width: 245px;
+      }
+      .quick__list-item:last-child {
+        width: 285px;
+      }
+      .quick__item-title {
+        font-size: 20px;
+        line-height: 1.4;
+        color: $title-color;
+        margin-bottom: 18px;
+      }
+      .quick__item-info {
+        line-height: 1.5;
+        color: $info-color;
+      }
+    }
+  }
+}

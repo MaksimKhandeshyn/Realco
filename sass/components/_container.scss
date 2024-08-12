@@ -1,5 +1,37 @@
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+}
+.subtitle-wrapper {
+  border-radius: 32px;
+  width: 100%;
+  background: $subtitle-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.magazine__container {
+  display: flex;
+}
+.property__list-container {
+  padding-left: 24px;
+}
+.properties__btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
 }

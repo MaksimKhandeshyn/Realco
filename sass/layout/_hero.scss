@@ -1,0 +1,68 @@
+.hero {
+  background-color: $bg-color;
+  //   padding-bottom: 160px;
+  position: relative;
+  //   padding-top: 160px;
+  .hero__content-wrapper {
+    margin-right: 164px;
+  }
+  .top-corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .hero__subtitle-wrapper {
+    width: 171px;
+    height: 29px;
+    .hero__subtitle {
+      font-size: 14px;
+      color: $title-color;
+      text-align: center;
+    }
+  }
+  .hero__title {
+    width: 516px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.2;
+    color: $title-color;
+    margin-bottom: 20px;
+  }
+  .hero__info {
+    width: 503px;
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $info-color;
+    margin-bottom: 20px;
+  }
+  .form__input {
+    font-size: 20px;
+    color: $info-color;
+    border: 1px solid #e7e8e3;
+    border-radius: 6px;
+    width: 310px;
+    height: 48px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding-left: 56px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .form__btn {
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid $bg-btn;
+    border-radius: 6px;
+    width: 154px;
+    height: 50px;
+    background-color: $bg-btn;
+    margin-left: 16px;
+  }
+  .bottom-corner {
+    position: absolute;
+    left: 872px;
+    bottom: 0px;
+  }
+}

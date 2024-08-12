@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <a href="#" class="logo">Realco</a>
         <nav class="nav">
           <ul class="nav__list">
@@ -41,10 +41,10 @@
           </ul>
           <ul class="nav__buy-list">
             <li class="nav__buy-item">
-              <button class="nav__buy-item">Cart</button>
+              <button class="cart">Cart</button>
             </li>
             <li class="nav__buy-item">
-              <button class="nav__buy-item">Find a property</button>
+              <button class="find-property">Find a property</button>
             </li>
           </ul>
         </nav>
@@ -52,10 +52,16 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <div class="content-container">
-            <img src="./images/corner-realco.png" alt="pixel-corner" />
-            <p class="hero__subtitle">Find your dream place</p>
+        <div class="container content-container">
+          <div class="hero__content-wrapper">
+            <img
+              src="./images/corner-realco.png"
+              alt="pixel-corner"
+              class="top-corner"
+            />
+            <div class="subtitle-wrapper hero__subtitle-wrapper">
+              <p class="hero__subtitle">Find your dream place</p>
+            </div>
             <h1 class="hero__title">Find house for your family in minutes</h1>
             <p class="hero__info">
               Aenean sodales mauris quis tellus facilisis, vel mattis magna.
@@ -63,15 +69,19 @@
             </p>
             <form class="form">
               <input type="search" class="form__input" placeholder="Search" />
-              <button>Find property</button>
+              <button class="form__btn">Find property</button>
             </form>
-            <img src="./images/second-corner.png" alt="pixel-corner" />
+            <img
+              src="./images/second-corner.png"
+              alt="pixel-corner"
+              class="bottom-corner"
+            />
           </div>
           <img src="./images/hero-realco.png" alt="living-room" />
         </div>
       </section>
       <section class="magazines">
-        <div class="container">
+        <div class="container magazine__container">
           <h2 class="magazine__title">
             As seen on the world's best magazines and media
           </h2>
@@ -129,135 +139,159 @@
         </div>
       </section>
       <section class="comfort">
-        <div class="container">
-          <p class="comfort__subtitle">Comfort first</p>
-          <h2 class="comfort__title">The best houses for family comfort</h2>
-          <p class="comfort__info">
-            Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin
-            sollicitudin, lorem non posuere blandit.
-          </p>
-          <button class="comfort__btn">Explore properties</button>
-          <a href="#" class="comfort__link">Contact agent</a>
-          <img src="./images/comfort-img.png" alt="room" />
+        <div class="container content-container">
+          <div class="comfort__content-container">
+            <div class="subtitle-wrapper comfort__wrapper">
+              <p class="comfort__subtitle">Comfort first</p>
+            </div>
+            <h2 class="comfort__title">The best houses for family comfort</h2>
+            <p class="comfort__info">
+              Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin
+              sollicitudin, lorem non posuere blandit.
+            </p>
+            <button class="comfort__btn">Explore properties</button>
+            <a href="#" class="comfort__link">Contact agent</a>
+          </div>
+          <img src="./images/comfort-img.png" alt="room" class="comfort__img" />
         </div>
       </section>
       <section class="quick">
-        <div class="container">
+        <div class="container content-container">
           <img src="./images/quick-img.png" alt="" />
-          <p class="quick__subtitle">Quick and easy</p>
-          <h2 class="quick__title">Fast forward process</h2>
-          <p class="quick__info">
-            Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis sit amet
-            mi arcu praesent nec felis nisl.
-          </p>
-          <ul class="quick__list">
-            <li class="quick__list-item">
-              <h3 class="quick__item-title">Affordable prices</h3>
-              <p class="quick__item-info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-            </li>
-            <li class="quick__list-item">
-              <h3 class="quick__item-title">Less paper work</h3>
-              <p class="quick__item-info">
-                Curabitur porta luctus semper donec eget lobortis leo ac finibus
-                nisi.
-              </p>
-            </li>
-          </ul>
-          <button class="comfort__btn">Explore properties</button>
-          <a href="#" class="comfort__link">Contact agent</a>
+          <div class="quick__container">
+            <div class="subtitle-wrapper quick__subtitle-wrapper">
+              <p class="quick__subtitle">Quick and easy</p>
+            </div>
+            <h2 class="quick__title">Fast forward process</h2>
+            <p class="quick__info">
+              Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis sit
+              amet mi arcu praesent nec felis nisl.
+            </p>
+            <ul class="quick__list">
+              <li class="quick__list-item">
+                <h3 class="quick__item-title">Affordable prices</h3>
+                <p class="quick__item-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+              <li class="quick__list-item">
+                <h3 class="quick__item-title">Less paper work</h3>
+                <p class="quick__item-info">
+                  Curabitur porta luctus semper donec eget lobortis leo ac
+                  finibus nisi.
+                </p>
+              </li>
+            </ul>
+            <button class="comfort__btn">Explore properties</button>
+            <a href="#" class="comfort__link">Contact</a>
+          </div>
         </div>
       </section>
       <section class="properties">
         <div class="container">
-          <p class="properties__subtitle">Properties</p>
+          <div class="subtitle-wrapper properties__subtitle-wrapper">
+            <p class="properties__subtitle">Properties</p>
+          </div>
           <h2 class="properties__title">Houses in your favorite area</h2>
           <ul class="properties__list">
             <li class="properties__list-item">
               <img src="./images/properties-1.png" alt="studio" />
-              <h3 class="property__item-title">Cozy studio in Los Angeles</h3>
-              <p class="property__item-cost">$ 1,200.00 USD</p>
-              <address class="property__item-address">
-                <a href="#" class="address-link">2263 Southlea, Los Angeles</a>
-              </address>
-              <ul class="property__item-list">
-                <li class="characteristcs">2</li>
-                <li class="characteristcs">2</li>
-                <li class="characteristcs">840 sqft</li>
-              </ul>
+              <div class="property__list-container">
+                <h3 class="property__item-title">Cozy studio in Los Angeles</h3>
+                <p class="property__item-cost">$ 1,200.00 USD</p>
+                <address class="property__item-address">
+                  <a href="#" class="address-link"
+                    >2263 Southlea, Los Angeles</a
+                  >
+                </address>
+                <ul class="property__item-list">
+                  <li class="characteristcs">2</li>
+                  <li class="characteristcs">2</li>
+                  <li class="characteristcs">840 sqft</li>
+                </ul>
+              </div>
             </li>
             <li class="properties__list-item">
               <img src="./images/properties-2.png" alt="tiny-home" />
-              <h3 class="property__item-title">Tiny home in San Diego</h3>
-              <p class="property__item-cost">$ 740,000.00 USD</p>
-              <address class="property__item-address">
-                <a href="#" class="address-link">2569 El Segundo, San Diego</a>
-              </address>
-              <ul class="property__item-list">
-                <li class="characteristcs">1</li>
-                <li class="characteristcs">2</li>
-                <li class="characteristcs">400 sqft</li>
-              </ul>
+              <div class="property__list-container">
+                <h3 class="property__item-title">Tiny home in San Diego</h3>
+                <p class="property__item-cost">$ 740,000.00 USD</p>
+                <address class="property__item-address">
+                  <a href="#" class="address-link">2569 El Segundo, San Diego</a>
+                </address>
+                <ul class="property__item-list">
+                  <li class="characteristcs">1</li>
+                  <li class="characteristcs">2</li>
+                  <li class="characteristcs">400 sqft</li>
+                </ul>
+              </div>
             </li>
             <li class="properties__list-item">
               <img src="./images/properties-3.png" alt="crown-house" />
-              <h3 class="property__item-title">Crown house in New York</h3>
-              <p class="property__item-cost">$ 980,000.00 USD</p>
-              <address class="property__item-address">
-                <a href="#" class="address-link">4489 Smity Fielda, New York</a>
-              </address>
-              <ul class="property__item-list">
-                <li class="characteristcs">2</li>
-                <li class="characteristcs">4</li>
-                <li class="characteristcs">3200 sqft</li>
-              </ul>
+              <div class="property__list-container">
+                <h3 class="property__item-title">Crown house in New York</h3>
+                <p class="property__item-cost">$ 980,000.00 USD</p>
+                <address class="property__item-address">
+                  <a href="#" class="address-link">4489 Smity Fielda, New York</a>
+                </address>
+                <ul class="property__item-list">
+                  <li class="characteristcs">2</li>
+                  <li class="characteristcs">4</li>
+                  <li class="characteristcs">3200 sqft</li>
+                </ul>
+              </div>
             </li>
             <li class="properties__list-item">
               <img src="./images/properties-4.png" alt="family-house" />
-              <h3 class="property__item-title">Family house in Los Angeles</h3>
-              <p class="property__item-cost">$ 4,200.00 USD</p>
-              <address class="property__item-address">
-                <a href="#" class="address-link">2263 Southlea, Los Angeles</a>
-              </address>
-              <ul class="property__item-list">
-                <li class="characteristcs">2</li>
-                <li class="characteristcs">3</li>
-                <li class="characteristcs">1400 sqft</li>
-              </ul>
+              <div class="property__list-container">
+                <h3 class="property__item-title">Family house in Los Angeles</h3>
+                <p class="property__item-cost">$ 4,200.00 USD</p>
+                <address class="property__item-address">
+                  <a href="#" class="address-link">2263 Southlea, Los Angeles</a>
+                </address>
+                <ul class="property__item-list">
+                  <li class="characteristcs">2</li>
+                  <li class="characteristcs">3</li>
+                  <li class="characteristcs">1400 sqft</li>
+                </ul>
+              </div>
             </li>
             <li class="properties__list-item">
               <img src="./images/properties-5.png" alt="studio-las_vegas" />
-              <h3 class="property__item-title">Studio in Las Vegas</h3>
-              <p class="property__item-cost">$ 820,000.00 USD</p>
-              <address class="property__item-address">
-                <a href="#" class="address-link"
-                  >2569 Halls Corner, Las Vegas</a
-                >
-              </address>
-              <ul class="property__item-list">
-                <li class="characteristcs">2</li>
-                <li class="characteristcs">3</li>
-                <li class="characteristcs">2400 sqft</li>
-              </ul>
+              <div class="property__list-container">
+                <h3 class="property__item-title">Studio in Las Vegas</h3>
+                <p class="property__item-cost">$ 820,000.00 USD</p>
+                <address class="property__item-address">
+                  <a href="#" class="address-link">2569 Halls Corner, Las Vegas</a>
+                </address>
+                <ul class="property__item-list">
+                  <li class="characteristcs">2</li>
+                  <li class="characteristcs">3</li>
+                  <li class="characteristcs">2400 sqft</li>
+                </ul>
+              </div>
             </li>
             <li class="properties__list-item">
               <img src="./images/properties-6.png" alt="san_diego-story" />
-              <h3 class="property__item-title">San Diego story</h3>
-              <p class="property__item-cost">$ 3,700.00 USD</p>
-              <address class="property__item-address">
-                <a href="#" class="address-link">2569 El Segundo, San Diego</a>
-              </address>
-              <ul class="property__item-list">
-                <li class="characteristcs">1</li>
-                <li class="characteristcs">2</li>
-                <li class="characteristcs">650 sqft</li>
-              </ul>
+              <div class="property__list-container">
+                <h3 class="property__item-title">San Diego story</h3>
+                <p class="property__item-cost">$ 3,700.00 USD</p>
+                <address class="property__item-address">
+                  <a href="#" class="address-link">2569 El Segundo, San Diego</a>
+                </address>
+                <ul class="property__item-list">
+                  <li class="characteristcs">1</li>
+                  <li class="characteristcs">2</li>
+                  <li class="characteristcs">650 sqft</li>
+                </ul>
+              </div>
             </li>
           </ul>
-          <button class="comfort__btn">Explore properties</button>
-          <a href="#" class="comfort__link">Contact agent</a>
+          <div class="properties__btn-wrapper">
+            <button class="comfort__btn">Explore properties</button>
+            <a href="#" class="comfort__link">Contact agent</a>
+          </div>
         </div>
         <img src="./images/second-corner.png" alt="pixel-corner" />
       </section>

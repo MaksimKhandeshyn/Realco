@@ -1,0 +1,18 @@
+.magazines {
+  padding-top: 67px;
+  padding-bottom: 125px;
+  .magazine__title {
+    width: 243px;   
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2a2c1f;
+  }
+  .magazine-list {
+    display: flex;
+    margin-left: 310px;
+    .magazine__list-item {
+        margin-right: 32px;
+    }
+  }
+}

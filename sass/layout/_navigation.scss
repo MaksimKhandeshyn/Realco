@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  .nav__list {
+    display: flex;
+    margin-right: 24px;
+    .nav__list-link {
+      color: $title-color;
+    }
+    .nav-list__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .nav__buy-list {
+    display: flex;
+    align-content: center;
+    .cart {
+      color: $title-color;
+      border: 1px solid $bg-color;
+      border-radius: 6px;
+      width: 100px;
+      height: 42px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+      background: #fff;
+    }
+    .find-property {
+      color: $white;
+      border: none;
+      border-radius: 6px;
+      width: 159px;
+      height: 42px;
+      background: $bg-btn;
+      margin-left: 16px;
+    }
+  }
+}
