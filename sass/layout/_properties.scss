@@ -1,6 +1,14 @@
 .properties {
   background-color: $bg-color;
   padding-top: 128px;
+  padding-bottom: 160px;
+  position: relative;
+  .properties__img {
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: -5px;
+  }
   .properties__subtitle-wrapper {
     width: 92px;
     height: 29px;
@@ -54,5 +62,10 @@
       }
     }
   }
-  
+  .properties__bottom-corner {
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }

@@ -1,0 +1,46 @@
+.location {
+  padding-bottom: 336px;
+  background-color: $bg-color;
+  .location-title {
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+    color: $title-color;
+  }
+  .locations-info {
+    width: 713px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: $info-color;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 72px;
+  }
+  .locations__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    .locations__list-item {
+      flex-basis: calc((100% - 2 * 16px) / 3);
+      border: 1px solid $subtitle-bg;
+      border-radius: 16px;
+      width: 416px;
+      height: 130px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+      background: $white;
+      padding-left: 33px;
+      .locations__item-title {
+        font-size: 20px;
+        line-height: 1.4;
+        color: $title-color;
+        margin-top: 33px;
+        margin-bottom: 11px;
+      }
+      .locations__item-properties {
+        line-height: 1.5;
+        color: $title-color;
+      }
+    }
+  }
+}

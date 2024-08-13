@@ -1,0 +1,46 @@
+.customers {
+  padding-bottom: 160px;
+  .customers__title {
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+    color: $title-color;
+    margin-bottom: 26px;
+  }
+  .customers__info {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: $info-color;
+    margin-bottom: 80px;
+  }
+  .customers__list {
+    display: flex;
+    .custmomers__list-item {
+      border: 1px solid $subtitle-bg;
+      border-radius: 16px;
+      width: 405px;
+      height: 325px;
+      margin-right: 32px;
+      padding-left: 33px;
+      .customers__item-comment {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        color: $title-color;
+        margin-top: 80px;
+      }
+      .customers__item-name {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $title-color;
+      }
+      .customers__item-post {
+        line-height: 1.5;
+        color: $info-color;
+      }
+    }
+  }
+}

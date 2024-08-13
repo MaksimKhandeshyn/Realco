@@ -28,10 +28,20 @@
 .property__list-container {
   padding-left: 24px;
 }
-.properties__btn-wrapper {
+.btn-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 80px;
+}
+.blog__description-wrapper {
+  display: flex;  
+  margin-bottom: 77px;
+  justify-content: space-between;
+}
+.type-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 }

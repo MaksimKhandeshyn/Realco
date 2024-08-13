@@ -190,6 +190,11 @@
       </section>
       <section class="properties">
         <div class="container">
+          <img
+            src="./images/corner-realco.png"
+            alt="pixel-corner"
+            class="properties__img"
+          />
           <div class="subtitle-wrapper properties__subtitle-wrapper">
             <p class="properties__subtitle">Properties</p>
           </div>
@@ -218,7 +223,9 @@
                 <h3 class="property__item-title">Tiny home in San Diego</h3>
                 <p class="property__item-cost">$ 740,000.00 USD</p>
                 <address class="property__item-address">
-                  <a href="#" class="address-link">2569 El Segundo, San Diego</a>
+                  <a href="#" class="address-link"
+                    >2569 El Segundo, San Diego</a
+                  >
                 </address>
                 <ul class="property__item-list">
                   <li class="characteristcs">1</li>
@@ -233,7 +240,9 @@
                 <h3 class="property__item-title">Crown house in New York</h3>
                 <p class="property__item-cost">$ 980,000.00 USD</p>
                 <address class="property__item-address">
-                  <a href="#" class="address-link">4489 Smity Fielda, New York</a>
+                  <a href="#" class="address-link"
+                    >4489 Smity Fielda, New York</a
+                  >
                 </address>
                 <ul class="property__item-list">
                   <li class="characteristcs">2</li>
@@ -245,10 +254,14 @@
             <li class="properties__list-item">
               <img src="./images/properties-4.png" alt="family-house" />
               <div class="property__list-container">
-                <h3 class="property__item-title">Family house in Los Angeles</h3>
+                <h3 class="property__item-title">
+                  Family house in Los Angeles
+                </h3>
                 <p class="property__item-cost">$ 4,200.00 USD</p>
                 <address class="property__item-address">
-                  <a href="#" class="address-link">2263 Southlea, Los Angeles</a>
+                  <a href="#" class="address-link"
+                    >2263 Southlea, Los Angeles</a
+                  >
                 </address>
                 <ul class="property__item-list">
                   <li class="characteristcs">2</li>
@@ -263,7 +276,9 @@
                 <h3 class="property__item-title">Studio in Las Vegas</h3>
                 <p class="property__item-cost">$ 820,000.00 USD</p>
                 <address class="property__item-address">
-                  <a href="#" class="address-link">2569 Halls Corner, Las Vegas</a>
+                  <a href="#" class="address-link"
+                    >2569 Halls Corner, Las Vegas</a
+                  >
                 </address>
                 <ul class="property__item-list">
                   <li class="characteristcs">2</li>
@@ -278,7 +293,9 @@
                 <h3 class="property__item-title">San Diego story</h3>
                 <p class="property__item-cost">$ 3,700.00 USD</p>
                 <address class="property__item-address">
-                  <a href="#" class="address-link">2569 El Segundo, San Diego</a>
+                  <a href="#" class="address-link"
+                    >2569 El Segundo, San Diego</a
+                  >
                 </address>
                 <ul class="property__item-list">
                   <li class="characteristcs">1</li>
@@ -288,12 +305,16 @@
               </div>
             </li>
           </ul>
-          <div class="properties__btn-wrapper">
+          <div class="btn-wrapper">
             <button class="comfort__btn">Explore properties</button>
             <a href="#" class="comfort__link">Contact agent</a>
           </div>
         </div>
-        <img src="./images/second-corner.png" alt="pixel-corner" />
+        <img
+          src="./images/second-corner.png"
+          alt="pixel-corner"
+          class="properties__bottom-corner"
+        />
       </section>
       <section class="location">
         <div class="container">
@@ -328,8 +349,10 @@
               <p class="locations__item-properties">View Properties</p>
             </li>
           </ul>
-          <button class="comfort__btn">Explore properties</button>
-          <a href="#" class="comfort__link">Contact agent</a>
+          <div class="btn-wrapper">
+            <button class="comfort__btn">Explore properties</button>
+            <a href="#" class="comfort__link">Contact agent</a>
+          </div>
         </div>
       </section>
       <seciton class="families">
@@ -382,46 +405,65 @@
       </section>
       <section class="blog">
         <div class="container">
-          <p class="blog__subtitle">Blog</p>
+          <div class="subtitle-wrapper blog__subtitle-wrapper">
+            <p class="blog__subtitle">Blog</p>
+          </div>
           <h2 class="blog__title">Lates posts</h2>
-          <p class="blog__description">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae. Praesent efficitur nibh massa morbi sagittis
-            ornare dui in ornare.
-          </p>
-          <button class="blog__btn">View all</button>
+          <div class="blog__description-wrapper">
+            <p class="blog__description">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae. Praesent efficitur nibh massa morbi
+              sagittis ornare dui in ornare.
+            </p>
+            <button class="blog__btn">View all</button>
+          </div>
           <ul class="blog__list">
             <li class="blog__list-item">
-              <p class="blog__item-type">Trends</p>
-              <data class="blog__item-data">May 10, 2022</data>
-              <h3 class="blog__item-title">The 9 best homes in New York</h3>
-              <p class="blog__item-info">
-                Integer tincidunt rutrum faucibus. Proin sit amet varius arcu.
-                Aliquam vel leo augue donec.
-              </p>
-              <a href="#" class="blog__item-more">Read more</a>
+              <img src="./images/blog-1.png" alt="" class="blog__img">
+              <div class="blog__item-wrapper">
+                <div class="type-container">
+                  <p class="blog__item-type trends">Trends</p>
+                  <data class="blog__item-data">May 10, 2022</data>
+                </div>
+                <h3 class="blog__item-title">The 9 best homes in New York</h3>
+                <p class="blog__item-info trends__info">
+                  Integer tincidunt rutrum faucibus. Proin sit amet varius arcu.
+                  Aliquam vel leo augue donec.
+                </p>
+                <a href="#" class="blog__item-more">Read more</a>
+              </div>
             </li>
             <li class="blog__list-item">
-              <p class="blog__item-type">DIY</p>
-              <data class="blog__item-data">May 10, 2022</data>
-              <h3 class="blog__item-title">
-                How to easily buy a house with Realco
-              </h3>
-              <p class="blog__item-info">
-                Praesent nec felis nisl. Phasellus eget lacus a metus fringilla
-                fermentum sit amet.
-              </p>
-              <a href="#" class="blog__item-more">Read more</a>
+              <img src="./images/blog-2.png" alt=""  class="blog__img"/>
+              <div class="blog__item-wrapper">
+                <div class="type-container">
+                  <p class="blog__item-type">DIY</p>
+                  <data class="blog__item-data">May 10, 2022</data>
+                </div>
+                <h3 class="blog__item-title diy-1">
+                  How to easily buy a house with Realco
+                </h3>
+                <p class="blog__item-info">
+                  Praesent nec felis nisl. Phasellus eget lacus a metus fringilla
+                  fermentum sit amet.
+                </p>
+                <a href="#" class="blog__item-more">Read more</a>
+              </div>
             </li>
             <li class="blog__list-item">
-              <p class="blog__item-type">DIY</p>
-              <data class="blog__item-data">May 10, 2022</data>
-              <h3 class="blog__item-title">Renting houses - complete guide</h3>
-              <p class="blog__item-info">
-                Nunc in bibendum leo, gravida scelerisque quam nulla interdum
-                tellus a turpis.
-              </p>
-              <a href="#" class="blog__item-more">Read more</a>
+              <img src="./images/blog-3.png" alt=""  class="blog__img"/>
+              <div class="blog__item-wrapper">
+                <div class="type-container">
+                  <p class="blog__item-type">DIY</p>
+                  <data class="blog__item-data">May 10, 2022</data>
+                </div>
+                <h3 class="blog__item-title diy-2">Renting houses - complete guide</h3>
+                <p class="blog__item-info">
+                  Nunc in bibendum leo, gravida scelerisque quam nulla interdum
+                  tellus a turpis.
+                </p>
+                <a href="#" class="blog__item-more">Read more</a>
+              </div>
             </li>
           </ul>
         </div>
