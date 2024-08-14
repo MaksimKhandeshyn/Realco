@@ -1,3 +1,15 @@
+.cart {
+  color: $title-color;
+  border: 1px solid $bg-color;
+  border-radius: 6px;
+  width: 100px;
+  height: 42px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .form__btn {
   font-size: 20px;
   color: #fff;

@@ -52,6 +52,23 @@ body {
   color: #2a2c1f;
 }
 
+.agent-icon {
+  margin-left: 4px;
+}
+
+.cart {
+  color: #2a2c1f;
+  border: 1px solid #f5f5f2;
+  border-radius: 6px;
+  width: 100px;
+  height: 42px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form__btn {
   font-size: 20px;
   color: #fff;
@@ -182,18 +199,18 @@ body {
 .nav .nav__list .nav-list__item:not(:last-child) {
   margin-right: 30px;
 }
+.nav .nav__list .properties__icon {
+  margin-left: 4px;
+}
+.nav .nav__list .search__link-icon {
+  margin-right: 4px;
+}
 .nav .nav__buy-list {
   display: flex;
   align-content: center;
 }
-.nav .nav__buy-list .cart {
-  color: #2a2c1f;
-  border: 1px solid #f5f5f2;
-  border-radius: 6px;
-  width: 100px;
-  height: 42px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-  background: #fff;
+.nav .nav__buy-list .nav__cart-icon {
+  margin-right: 4px;
 }
 .nav .nav__buy-list .find-property {
   color: #fff;
@@ -241,6 +258,14 @@ body {
   line-height: 1.5;
   color: #65665c;
   margin-bottom: 20px;
+}
+.hero .form {
+  position: relative;
+}
+.hero .search__form-icon {
+  position: absolute;
+  left: 19px;
+  top: 15px;
 }
 .hero .form__input {
   font-size: 20px;
@@ -291,12 +316,23 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   margin-right: 32px;
 }
+.work__list .work__list-item .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background: #fae8e1;
+  margin-top: 49px;
+  margin-left: 170px;
+  margin-bottom: 24px;
+}
 .work__list .work__list-item .work__item-title {
   font-size: 24px;
   line-height: 1.4;
   text-align: center;
   color: #2a2c1f;
-  margin-top: 121px;
 }
 .work__list .work__list-item .work__item-info {
   width: 338px;
