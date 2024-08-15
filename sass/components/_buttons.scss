@@ -9,6 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 .form__btn {
   font-size: 20px;
@@ -19,6 +26,13 @@
   height: 50px;
   background-color: $bg-btn;
   margin-left: 16px;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 .comfort__btn {
   color: $title-color;
@@ -28,6 +42,9 @@
   height: 50px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .families-btn {
   color: $white;
@@ -39,6 +56,9 @@
   margin: auto;
   display: block;
   margin-top: 24px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .blog__btn {
   width: 108px;
@@ -47,6 +67,9 @@
   border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   background: $white;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .footer__form-btn {
   border: 1px solid $bg-btn;
@@ -56,4 +79,7 @@
   background: $bg-btn;
   color: $white;
   margin-bottom: 15px;
+  &:hover {
+    cursor: pointer;
+  }
 }

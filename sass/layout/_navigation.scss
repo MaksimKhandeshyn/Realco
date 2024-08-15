@@ -5,12 +5,18 @@
   .nav__list {
     display: flex;
     margin-right: 24px;
-    .nav__list-link {
-      color: $title-color;
-    }
     .nav-list__item:not(:last-child) {
       margin-right: 30px;
     }
+    .nav__list-link {
+      color: $title-color;
+      transition: all 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+      &:hover {
+        color: #e67919;
+        fill: #e67919;
+      }
+    }
+    
     .properties__icon {
       margin-left: 4px;
     }
@@ -32,6 +38,13 @@
       height: 42px;
       background: $bg-btn;
       margin-left: 16px;
+      transition-property: box-shadow;
+      transition-duration: 300ms;
+      transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      &:hover {
+        cursor: pointer;
+        box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1);
+      }
     }
   }
 }

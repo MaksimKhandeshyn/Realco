@@ -8,12 +8,17 @@
   height: 465px;
   margin: auto;
   transform: translateY(-50%);
+  .families__icon{
+    margin: auto;
+    display: block;
+  }
   .families__title {
     font-size: 48px;
     line-height: 1.2;
     text-align: center;
     color: $white;
     margin-bottom: 29px;
+    margin-top: 13px;
   }
   .families__info {
     width: 765px;

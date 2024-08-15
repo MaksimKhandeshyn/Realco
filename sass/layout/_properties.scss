@@ -50,6 +50,11 @@
         font-style: normal;
         line-height: 1.5;
         color: $info-color;
+        display: flex;
+        align-items: center;
+        .properties__item-icon {
+          margin-right: 10px;
+        }
       }
       .property__item-list {
         display: flex;
@@ -58,6 +63,9 @@
           line-height: 1.5;
           color: $info-color;
           margin-right: 24px;
+          .item__list-icon {
+            margin-right: 10px;
+          }
         }
       }
     }
